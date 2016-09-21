@@ -1,0 +1,67 @@
+
+
+
+.sliderWrapper{
+    overflow: hidden;
+    position:relative;
+}
+
+
+#slider p { position:absolute;
+    bottom:90%;
+    left:70%;
+    color:#fff;
+    font:16px "Trebuchet MS";
+    margin:0;
+    width:auto;
+    height:45px;
+    padding:5px 5% 10px;
+    background-color:#000;
+    opacity: 0.3;
+    text-align: center;
+
+
+}
+
+
+
+ .sli-links{ /* Кнопки смены слайдов */
+    margin-top:10px;
+    text-align:center;
+
+}
+
+.sli-links .control-slide{
+    margin:2px;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    text-indent:-9999px;
+    background:url(radioBg.png) center bottom no-repeat;}
+.sli-links .control-slide:hover{
+    cursor:pointer;
+    background-position:center center;}
+.sli-links .control-slide.active{
+    background-position:center top;}
+#prewbutton, #nextbutton{ /* Ссылка "Следующий" и "Педыдущий" */
+    display:block;
+    width:15px;
+    height:100%;
+    position:absolute;
+    top:0;
+    overflow:hidden;
+    text-indent:-999px;
+    background:url(arrowBg.png) left center no-repeat;
+    opacity:0.8;
+    z-index:3;
+    outline:none !important;}
+#prewbutton{left:10px;}
+#nextbutton{
+    right:10px;
+    background:url(arrowBg.png) right center no-repeat;}
+#prewbutton:hover, #nextbutton:hover{
+    opacity:1;}
+
+
+
